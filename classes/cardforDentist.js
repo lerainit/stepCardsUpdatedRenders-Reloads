@@ -1,5 +1,5 @@
 import Card from "./card.js";
-import renderAfterReloadandDelete from "../functions/renderAfterReloadAndDelete.js";
+
 import instance from "../functions/instance.js";
 
 class CardforDentist extends Card{
@@ -19,20 +19,6 @@ this.ul.insertAdjacentHTML('beforeend',`
 
 `)
 
-this.deleteBtn.addEventListener('click',()=>{
-    console.log(this._id)
-
-   const deleteCard = async ()=>{
-        const result = await instance.delete(`/${this._id}`)
-        console.log(result)
-    
-    }
-    deleteCard()
-    localStorage.setItem('deletedcard',this._id)
-  
-  renderAfterReloadandDelete()
-this.cardContainer.remove()
-})
 
 
 

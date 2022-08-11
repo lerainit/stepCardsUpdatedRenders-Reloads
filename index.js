@@ -9,7 +9,7 @@ import renderCardsAfterReload from "./functions/renderCardsAfterReload.js";
 import filterCards from "./functions/filterFuction.js";
 import CardforCardiologist from "./classes/cardforCardiologist.js";
 import renderAfterReloadwithAddedCard from "./functions/renderCardsAfterAddNewCardAndReload.js";
-import renderAfterReloadandDelete from "./functions/renderAfterReloadAndDelete.js";
+
 
 
 

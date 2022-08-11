@@ -2,7 +2,6 @@ import Visit from "./visit.js";
 import postNewCards from "../functions/postCardFunc.js";
 import instance from "../functions/instance.js";
 import getUrgency from "../functions/getUrgency.js";
-import renderAfterReloadandDelete from "../functions/renderAfterReloadAndDelete.js";
 import renderAfterReloadwithAddedCard from "../functions/renderCardsAfterAddNewCardAndReload.js";
 
 class VisitDentist extends Visit{
@@ -56,7 +55,7 @@ class VisitDentist extends Visit{
           postNewCards({doctor:'dentist',name:document.querySelector('#name').value,lastVisitDate:document.querySelector('#lastvisit').value,purpose:document.querySelector('#purpose').value,description:document.querySelector('#description').value,urgency: urgencyPost }) 
          
             
-          //renderAfterReloadwithAddedCard()   
+        
                
                 
 
